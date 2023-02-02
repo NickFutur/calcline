@@ -11,21 +11,187 @@
 </head>
 
 <body>
+    <!-- Strart header blocks -->
     <header class="header">
         <div class="header-block">
-            <h1>Калькулятор линия полива №2</h1>
+            <h1 class="header-block-title">Калькулятор линия полива №2</h1>
         </div>
     </header>
+    <!-- End header blocks -->
     <main class="wrap">
         <div class="wrapper">
+            <!-- Strart input data -->
+            <div class="wrapper-input">
+                <div class="wrapper-input-block">
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время нагрева бочки с клеем, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время демонтажа шпули из-под пленки и монтажа новой пленки со склейкой, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время демонтажа шпули из-под лайнера и монтажа нового лайнера со склейкой, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Количество клея в бочке, кг</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Намотка пленки в джамбо, пог.м</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Намотка лайнера в джамбо, пог.м</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-input-block">
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Намотка готового полуфабриката, пог.м</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время протяжки материалов и первоначальной настройки, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время корректировки настроек, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время упаковки, идентификации и демонтажа полуфабриката, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время замены бочки с клеем, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Скорость полива, м/мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-input-block">
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Размер партии полива, пог.м</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Граммаж клея, г</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Продолжительность рабочей смены, час</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Ширина полива, мм</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время чистки головки и уборки, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
+                    <div class="input-block-wrapper">
+                        <div class="input-block-wrapper-title">
+                            <p class="txt">Время чистки головки и уборки, мин</p>
+                        </div>
+                        <div class="input-block-wrapper-work-area">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp">
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <!-- End input data -->
+
+            <div class="wrapper-line"></div>
+            <!-- Strart result blocks -->
+            <div class="wrapper-result">
+                <div class="wrapper-result-block1"></div>
+                <div class="wrapper-result-block2"></div>
+            </div>
+            <!-- End result blocks -->
         </div>
     </main>
+    <!-- Strart footer blocks -->
     <footer class="footer">
         <div class="footer-block">
-            <h2>Калькулятор линия полива №2</h2>
+            <h2 class="footer-block-title">Калькулятор линия полива №2</h2>
         </div>
     </footer>
+    <!-- End footer blocks -->
 </body>
 <script src="js/html2pdf.bundle.min.js"></script>
 <script src="js/main.js"></script>
