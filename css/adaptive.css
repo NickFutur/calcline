@@ -1,0 +1,42 @@
+@media only screen and (max-width: 480px) {
+    .header-block-title,
+    .footer-block-title {
+        font-size: 2.0rem;
+        text-align: center;
+        line-height: 23px;
+    }
+    .header,
+    .footer {
+        height: 50px;
+    }
+    .input-block-wrapper {
+        width: 100%;
+    }
+    .wrapper-input-block {
+        width: 100%;
+    }
+    .result-block-wrapper {
+        flex-direction: column;
+    }
+    .result-block-wrapper-answer {
+        width: 100%;
+    }
+    .result-block-wrapper-title {
+        width: 100%;
+        text-align: center;
+    }
+    .result-title {
+        font-size: 1.6rem;
+    }
+    .result-block-wrapper {
+        margin-bottom: 10px;
+    }
+    .wrapper-result-block {
+        align-items: center;
+        min-width: 100%;
+    }
+    .wrapper-result-block-btn {
+        min-width: 90%;
+        font-size: 1.6rem;
+    }
+}
