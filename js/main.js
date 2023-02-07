@@ -57,13 +57,13 @@ document.addEventListener('input', function(event) {
         let T0 = Number(((T2 / N2) * N4) + ((T3 / N3) * N4) + ((T4 / M) * N4) + ((((T7 * G * L) / ((N1 - 10) * 1000 * 1000)) * N4) + T6 + (N4 / V))).toFixed(4);
         let K = Number((T10 * 60) / (T10 * 60 - T1 - T5 - T8 - T9)).toFixed(4);
         let T = Number(T0 * K).toFixed(4);
-        let P = Number(((T10 * 60) / T) * N4).toFixed(4);
+        let P = Number((T10 * 60 - T1 - T5 - T8 - T9) / (T2 / N2 + T3 / N3 + T4 / M + T7 * G * L / (N1 - 10) / 1000000 + T6 / N4 + 1 / V)).toFixed(4);
         document.getElementById("HelpOperation").textContent = HelpOperation;
         document.getElementById("T0").innerHTML = T0;
         document.getElementById("K").innerHTML = K;
         document.getElementById("T").innerHTML = T;
         document.getElementById("P").innerHTML = P;
-        console.log(((T2 / N2) * N4) + ((T3 / N3) * N4) + ((T4 / M) * N4) + ((T7 * G * L) / ((N1 - 10) * 1000 * 1000)) * N4);
+        console.log(Number(((T10 * 60) / T) * N4).toFixed(4));
     } else {
         return;
     }
