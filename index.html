@@ -21,14 +21,14 @@
     <main class="wrap">
         <div class="wrapper">
             <!-- Strart input data -->
-            <div class="wrapper-input">
+            <div class="wrapper-input" id="wrapperInput">
                 <div class="wrapper-input-block">
                     <div class="input-block-wrapper">
                         <div class="input-block-wrapper-title">
                             <p class="txt">Время нагрева бочки с клеем, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T1">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp item" id="T1" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -36,7 +36,7 @@
                             <p class="txt">Время демонтажа шпули из-под пленки и монтажа новой пленки со склейкой, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T2">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp item" id="T2" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -44,7 +44,7 @@
                             <p class="txt">Время демонтажа шпули из-под лайнера и монтажа нового лайнера со склейкой, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T3">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp item" id="T3" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -52,7 +52,7 @@
                             <p class="txt">Количество клея в бочке, кг</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="11" class="inp" id="N1">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="11" class="inp item" id="N1" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -60,7 +60,7 @@
                             <p class="txt">Намотка пленки в джамбо, пог.м</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="N2">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp item" id="N2" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -68,7 +68,7 @@
                             <p class="txt">Намотка лайнера в джамбо, пог.м</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="N3">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp item" id="N3" data-count>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                             <p class="txt">Намотка готового полуфабриката, пог.м</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="N4">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="N4" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -86,7 +86,7 @@
                             <p class="txt">Время протяжки материалов и первоначальной настройки, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T4">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T4" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -94,7 +94,7 @@
                             <p class="txt">Время корректировки настроек, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T5">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T5" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -102,7 +102,7 @@
                             <p class="txt">Время упаковки, идентификации и демонтажа полуфабриката, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T6">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T6" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -110,7 +110,7 @@
                             <p class="txt">Время замены бочки с клеем, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T7">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T7" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -118,7 +118,7 @@
                             <p class="txt">Скорость полива, м/мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="V">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="V" data-count>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                             <p class="txt">Размер партии полива, пог.м</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="M">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="M" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -136,7 +136,7 @@
                             <p class="txt">Граммаж клея, г</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="G">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="G" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -144,7 +144,7 @@
                             <p class="txt">Продолжительность рабочей смены, час</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T10">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T10" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -152,7 +152,7 @@
                             <p class="txt">Ширина полива, мм</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="L">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="L" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -160,7 +160,7 @@
                             <p class="txt">Время чистки головки и уборки, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T8">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T8" data-count>
                         </div>
                     </div>
                     <div class="input-block-wrapper">
@@ -168,7 +168,7 @@
                             <p class="txt">Время чистки головки и уборки, мин</p>
                         </div>
                         <div class="input-block-wrapper-work-area">
-                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T9">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" value="10" class="inp" id="T9" data-count>
                         </div>
                     </div>
 
