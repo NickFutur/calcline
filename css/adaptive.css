@@ -5,9 +5,17 @@
         text-align: center;
         line-height: 23px;
     }
-    .header,
+    .header-block {
+        height: 50px;
+    }
+    .nav-menu__link {
+        font-size: 1.6rem;
+    }
     .footer {
         height: 50px;
+    }
+    .wrapper {
+        margin-top: 80px;
     }
     .input-block-wrapper {
         width: 100%;
