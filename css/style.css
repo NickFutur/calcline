@@ -89,9 +89,11 @@
 .wrapper-input-block,
 .wrapper-result-block {
     display: flex;
-    justify-content: center;
-    align-items: space-between;
     flex-direction: column;
+}
+
+.wrapper-result-block {
+    justify-content: center;
 }
 
 .input-block-wrapper {
