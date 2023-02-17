@@ -71,6 +71,7 @@ document.addEventListener('input', function(event) {
             document.getElementById("T_").innerHTML = T_;
             document.getElementById("P_1").innerHTML = P_1;
             console.log(Number(((T_10 * 60) / T_) * N_4).toFixed(4));
+            // Расчёт исключений
         } else if (N_1 == 0 || N_2 == 0 || N_3 == 0 || N_4 == 0 || N_5 == 0 || M_1 == 0 || V_1 == 0 || T_2 == 0 || T_3 == 0 || T_6 == 0 || T_7 == 0 || (T_13 + T_14) == 0 || (T_4 + T_11 + T_12) == 0) {
             function exclusionFun(e) {
                 let T_2_N_2 = Number(T_2 / N_2);
@@ -110,14 +111,7 @@ document.addEventListener('input', function(event) {
                 if (!isFinite(K_1_) || isNaN(K_1_)) {
                     K_1_ = 0;
                 }
-                console.log('T_2 / N_2 = ' + T_2_N_2);
-                console.log('T_3 / N_3 = ' + T_3_N_3);
-                console.log('T_7 / N_1 = ' + T_7_N_1);
-                console.log('T_13 + T_14 / N_5 = ' + T_13_T_14_N_5);
-                console.log('T_4 + T_11 + T_12 / M_1 = ' + T_4_T_11_T_12_M_1);
-                console.log('T_6 / N_4 = ' + T_6_N_4);
-                console.log('V_1_ = ' + V_1_);
-                console.log('K_1_ = ' + K_1_);
+
                 // выражение P_1_Answer не переносить вверх, потому что может нарушиться логика
                 let P_1_Answer = Number((T_10 * 60 - T_1 - T_5 - T_8 - T_9) / (T_2_N_2 + T_3_N_3 + T_7_N_1 + T_13_T_14_N_5 + T_4_T_11_T_12_M_1 + T_6_N_4 + V_1_));
                 // Уравнения, результаты которых будут выводиться на сайте 
@@ -130,9 +124,7 @@ document.addEventListener('input', function(event) {
                     P_1_Answer = 0;
                 }
                 let P_1 = P_1_Answer.toFixed(4);
-                console.log('P_1 = ' + P_1);
-                console.log(' -------------- ');
-                console.log(' ');
+
                 // Вывод элементов на страницу
                 document.getElementById("HelpOperation").textContent = HelpOperation_1;
                 document.getElementById("T_0").innerHTML = T_0;
