@@ -42,6 +42,7 @@ document.addEventListener('input', function(event) {
                 let N4_V = Number(N4 / V);
                 let V_1 = Number(1 / V);
                 let T10_nums = Number((T10 * 60) / (T10 * 60 - T1 - T5 - T8 - T9));
+                let T10_T1_T5_T8_T9 = Number((T10 * 60 - T1 - T5 - T8 - T9));
 
                 if (!isFinite(N1_num) || isNaN(N1_num)) {
                     N1_num = 0;
@@ -67,27 +68,10 @@ document.addEventListener('input', function(event) {
                 if (!isFinite(T10_nums) || isNaN(T10_nums)) {
                     T10_nums = 0;
                 }
-                console.log('N1_num = ' + N1_num);
-                console.log('T2_N2 = ' + T2_N2);
-                console.log('T3_N3 = ' + T3_N3);
-                console.log('T6_N4 = ' + T6_N4);
-                console.log('T4_M = ' + T4_M);
-                console.log('V_1 = ' + V_1);
-                console.log('T10_nums = ' + T10_nums);
-                console.log(' --------------');
-                console.log(' ');
                 // выражение P_Answer не переносить вверх, потому что может нарушиться логика
-                let P_Answer = Number(T10_nums / (T2_N2 + T3_N3 + T4_M + N1_num + T6_N4 + V_1));
+                let P_Answer = Number(T10_T1_T5_T8_T9 / (T2_N2 + T3_N3 + T4_M + N1_num + T6_N4 + V_1));
                 // Уравнения, результаты которых будут выводиться на сайте 
                 let HelpOperation = Number((T2_N2 * N4) + (T3_N3 * N4) + (T4_M * N4) + (N1_num * N4));
-                console.log('T2_N2 * N4 = ' + T2_N2 * N4);
-                console.log('T3_N3 * N4 = ' + T3_N3 * N4);
-                console.log('T4_M * N4 = ' + T4_M * N4);
-                console.log('N1_num = ' + N1_num);
-                console.log('N1_num * N4 = ' + N1_num * N4);
-                console.log(' +++++++++++++++ ');
-                console.log(' ');
-                console.log(' ');
                 let T0 = Number(HelpOperation + T6 + N4_V);
                 let K = T10_nums;
                 let T = Number(T0 * K);
@@ -110,20 +94,7 @@ document.addEventListener('input', function(event) {
             return;
         }
 
-    }
-    //     let HelpOperation = Number(((T2 / N2) * N4) + ((T3 / N3) * N4) + ((T4 / M) * N4) + ((T7 * G * L) / ((N1 - 10) * 1000 * 1000)) * N4).toFixed(4);
-    //     let T0 = Number(((T2 / N2) * N4) + ((T3 / N3) * N4) + ((T4 / M) * N4) + ((((T7 * G * L) / ((N1 - 10) * 1000 * 1000)) * N4) + T6 + (N4 / V))).toFixed(4);
-    //     let K = Number((T10 * 60) / (T10 * 60 - T1 - T5 - T8 - T9)).toFixed(4);
-    //     let T = Number(T0 * K).toFixed(4);
-    //     let P = Number((T10 * 60 - T1 - T5 - T8 - T9) / (T2 / N2 + T3 / N3 + T4 / M + T7 * G * L / (N1 - 10) / 1000000 + T6 / N4 + 1 / V)).toFixed(4);
-    //     document.getElementById("HelpOperation").textContent = HelpOperation;
-    //     document.getElementById("T0").innerHTML = T0;
-    //     document.getElementById("K").innerHTML = K;
-    //     document.getElementById("T").innerHTML = T;
-    //     document.getElementById("P").innerHTML = P;
-    //     console.log(Number(((T10 * 60) / T) * N4).toFixed(4));
-    // } 
-    else {
+    } else {
         return;
     }
 });
