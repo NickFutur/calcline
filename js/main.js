@@ -207,6 +207,12 @@ document.addEventListener('input', function(event) {
     }
 });
 
+jQuery(document).ready(function() {
+    $('#wrBtn').click(function() {
+        window.print();
+    })
+});
+
 // function generatePDF() {
 
 //     html2pdf()
